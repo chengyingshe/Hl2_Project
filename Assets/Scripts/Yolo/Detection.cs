@@ -332,8 +332,8 @@ public class Detection : MonoBehaviour
 
         if (res.Length > 0)
         {
+            OutputLog($"识别结果: {res}", true);
             res = $"识别结果为：{res}";
-            OutputLog(res, true);
             speaker.textToSpeak = res;
         }
 
@@ -346,8 +346,8 @@ public class Detection : MonoBehaviour
 
         if (res.Length > 0)
         {
+            OutputLog($"识别结果: {res}", true);
             res = $"情绪：{res}";
-            OutputLog(res, true);
             speaker.textToSpeak = res;
         }
 
@@ -368,7 +368,7 @@ public class Detection : MonoBehaviour
                 //OutputLog("完成目标识别", true);
 
                 float end = Time.realtimeSinceStartup;
-                fpsTMP.text = $"FPS: {(1.0f / (end - start)):N1}";  //��ʾ���֡��
+                fpsTMP.text = $"FPS: {(1.0f / (end - start)):N1}";
 
                 yield return null;
             }

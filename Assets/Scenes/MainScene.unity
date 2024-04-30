@@ -319,8 +319,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175157705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.063, y: 0.024, z: 1}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: -0.0137, y: 0.024, z: 0.8}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 433115905}
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u8BC6\u522B\u6587\u672C: "
+  m_text: "\u8BC6\u522B\u7ED3\u679C\u4E3A: "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80c3b8e989fef2d44a91ef4a95d9485d, type: 2}
   m_sharedMaterial: {fileID: 4229494161918623714, guid: 80c3b8e989fef2d44a91ef4a95d9485d, type: 2}
@@ -687,8 +687,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'FPS: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 80c3b8e989fef2d44a91ef4a95d9485d, type: 2}
+  m_sharedMaterial: {fileID: 4229494161918623714, guid: 80c3b8e989fef2d44a91ef4a95d9485d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -777,7 +777,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4229494161918623714, guid: 80c3b8e989fef2d44a91ef4a95d9485d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   cameraResolutionWidth: 640
   cameraResolutionHeight: 360
   inferenceImgSize: 320
-  confidenceThreshold: 0.1
+  confidenceThreshold: 0.2
   isDetecting: 1
   detectionType: 0
   laserMaterial: {fileID: 2100000, guid: 67e4ae112f094f3082e033060c3cd298, type: 2}

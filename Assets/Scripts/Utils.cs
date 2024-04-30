@@ -327,20 +327,12 @@ public class FaceEmotionData
 {
     public float confidence;
     public string emotion;
-    public override string ToString()
-    {
-        return $"FaceEmotionData[confidence: {confidence}, emotion: {emotion}]";
-    }
 }
 
 [Serializable]
 public class FaceEmotionResult
 {
     public FaceEmotionData data;
-    public override string ToString()
-    {
-        return $"FaceEmotionResult[{data}]";
-    }
 }
 
 public class Hl2ServerApi
@@ -417,7 +409,7 @@ public class Hl2ServerApi
         if (jsonString != null)
         {
             FaceEmotionResult faceResult = JsonUtility.FromJson<FaceEmotionResult>(jsonString);
-            if (!faceResult.IsUnityNull())
+            if (faceResult.data.confidence != 0)
             {
                 wholeText = faceResult.data.emotion;
             }
